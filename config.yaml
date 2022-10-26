@@ -89,18 +89,26 @@ languages:
           name: Главная
           url: /
           weight: 1
+          params:
+            icon: home
         - identifier: categories
           name: Категории
           url: /categories
+          params:
+            icon: categories
           weight: 2
         - identifier: tags
           name: Теги
           url: /tags/
           weight: 3
+          params:
+            icon: tag
         - identifier: about
           name: Обо мне
           url: /about/
           weight: 4
+          params:
+            icon: user
       social: *social
 
 markup:
