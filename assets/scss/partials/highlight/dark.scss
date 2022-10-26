@@ -1,0 +1,29 @@
+$color: #f0f0f0;
+$background-color: #232323;
+$error-color: #bb0064;
+$keyword-color: #6699ef;
+$text-color: $color;
+$name-color: #46e244;
+$literal-color: #f8cb74;
+
+@import "common.scss";
+
+/* KeywordNamespace */
+.chroma .kn {
+    color: $keyword-color;
+}
+
+/* NameDecorator */
+.chroma .nd {
+    color: gold;
+}
+
+/* NameTag */
+.chroma .nt {
+    color: gold;
+}
+
+/* Operator */
+.chroma .o {
+    color: $color;
+}

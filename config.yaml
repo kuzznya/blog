@@ -1,0 +1,131 @@
+baseURL: https://kuzznya.space
+languageCode: en-us
+title: '@kuzznya space'
+
+defaultContentLanguage: en
+
+theme: hugo-theme-stack
+
+description: &description
+  Software Engineer at AWS with over 3 years of experience
+
+params:
+  description: *description
+  mainSections: 
+    - posts
+  sidebar:
+    subtitle: *description
+    avatar:
+      src: avatar.png
+  widgets:
+    homepage:
+      # - type: categories
+      #   params:
+      #       limit: 10
+      - type: tag-cloud
+        params:
+            limit: 20
+    page:
+      - type: toc
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+      params:
+        icon: home
+    - identifier: categories
+      name: Categories
+      url: /categories
+      weight: 2
+      params:
+        icon: categories
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
+      params:
+        icon: tag
+    - identifier: about
+      name: About me
+      url: /about/
+      weight: 4
+      params:
+        icon: user
+  social: &social
+    - identifier: github
+      name: GitHub
+      url: https://github.com/kuzznya
+      weight: 1
+      params:
+        icon: brand-github
+    - identifier: mail
+      name: Mail
+      url: mailto:ikuz2002@gmail.com
+      weight: 2
+      params:
+        icon: mail
+    - indentifier: linkedin
+      name: LinkedIn
+      url: https://linkedin.com/in/kuzznya
+      params:
+        icon: brand-linkedin
+      
+
+languages:
+  en:
+    weight: 1
+    languageCode: en
+    languageName: English
+  ru:
+    weight: 1
+    languageCode: ru
+    languageName: Русский
+    menu:
+      main:
+        - identifier: home
+          name: Главная
+          url: /
+          weight: 1
+        - identifier: categories
+          name: Категории
+          url: /categories
+          weight: 2
+        - identifier: tags
+          name: Теги
+          url: /tags/
+          weight: 3
+        - identifier: about
+          name: Обо мне
+          url: /about/
+          weight: 4
+      social: *social
+
+markup:
+  goldmark:
+    renderer:
+        ## Set to true if you have HTML content inside Markdown
+      unsafe: false
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNumbersInTable: true
+    tabWidth: 4
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
