@@ -66,7 +66,7 @@ Client -> Server : GET /resource \n Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ
 Server -> Client : 200 OK
 ```
 
-`dXNlcm5hbWU6cGFzc3dvcmQ=` is base64 encoded string `username:password`.
+`dXNlcm5hbWU6cGFzc3dvcmQ=` - это закодированная в base64 строка `username:password`.
 
 
 Этот способ аутентификации может быть использован только при HTTPs (зашифрованном) подключении, иначе промежуточные узлы могут легко получить доступ к учетным данным.
