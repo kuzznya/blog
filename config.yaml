@@ -9,6 +9,7 @@ theme: hugo-theme-stack
 googleAnalytics: G-LP0RTBQFM2
 
 description: &description
+  Ilya Kuznetsov<br/>
   Software Engineer at AWS with over 3 years of experience
 
 params:
