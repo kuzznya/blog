@@ -30,6 +30,21 @@ params:
             limit: 20
     page:
       - type: toc
+  comments:
+    enabled: true
+    provider: giscus
+    giscus:
+      repo: kuzznya/blog
+      repoID: R_kgDOIUFrKQ
+      category: giscus
+      categoryID: DIC_kwDOIUFrKc4CSO6Z
+      mapping: pathname
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: top
+      lang: en
+
 
 menu:
   main:
