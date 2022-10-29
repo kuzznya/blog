@@ -1,0 +1,3 @@
+{{ if .Site.Params.comments.enabled | and (not (isset .Page.Params "comments") | or .Page.Params.comments ) }}
+    {{ partial (printf "comments/provider/%s" .Site.Params.comments.provider) . }}
+{{ end }}

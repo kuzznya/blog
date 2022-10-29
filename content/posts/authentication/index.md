@@ -85,7 +85,7 @@ because password should be recoverable.
 Both Basic and Digest authentications do not allow server to log user off (after a certain period of inactivity).
 The only way for user to log out is to close all the tabs of the website.
 
-## Forms-based authentication
+## Forms-based authentication (Cookie-based authentication)
 
 Forms-based authentication is not a standard but a common implementation. To implement it, the application should include an HTML form that the user fills in and sends to the server using POST request 
 (so that credentials would be passed in the request body, not in query params).
