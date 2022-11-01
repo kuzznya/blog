@@ -90,6 +90,11 @@ menu:
       url: https://linkedin.com/in/kuzznya
       params:
         icon: brand-linkedin
+    - identifier: youtube
+      name: YouTube
+      url: https://youtube.com/@kuzznya
+      params:
+        icon: brand-youtube
       
 
 languages:
