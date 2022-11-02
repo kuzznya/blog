@@ -80,6 +80,6 @@ function plantumlImage(id, code) {
 
     function done_deflating(e) {
         const img = document.getElementById(id);
-        img.src = "https://plantuml.kuzznya.space/img/" + encode64(e.data);
+        img.src = "https://plantuml.kuzznya.com/img/" + encode64(e.data);
     }
 }
